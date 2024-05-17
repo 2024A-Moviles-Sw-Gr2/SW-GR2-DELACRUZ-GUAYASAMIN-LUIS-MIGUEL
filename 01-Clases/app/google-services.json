@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042170017164",
+    "project_id": "ludlc-2024a-sw-gr2",
+    "storage_bucket": "ludlc-2024a-sw-gr2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042170017164:android:ae812792b6c863b95212a9",
+        "android_client_info": {
+          "package_name": "com.example.a2024aswgr2_luisdlc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe0_amTaSaQRN8yBm8ZYuSCGHrVYJRGeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
