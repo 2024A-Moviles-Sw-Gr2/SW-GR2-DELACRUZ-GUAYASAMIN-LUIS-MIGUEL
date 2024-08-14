@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "535282420413",
+    "project_id": "deber03-d5b0d",
+    "storage_bucket": "deber03-d5b0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535282420413:android:cd564a89912456a6aa45d4",
+        "android_client_info": {
+          "package_name": "com.example.deber03_recycleview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4ZzTYU6LEyS7zFafqxF56UFVu47lSjsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

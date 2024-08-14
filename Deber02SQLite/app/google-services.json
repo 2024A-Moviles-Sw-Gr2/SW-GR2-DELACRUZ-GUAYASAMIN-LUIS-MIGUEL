@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217190871579",
+    "project_id": "deber02-694d8",
+    "storage_bucket": "deber02-694d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217190871579:android:5b8d4bd02b6f654dd0bebe",
+        "android_client_info": {
+          "package_name": "com.example.deber02_sqlite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIRuwltpsB5q2UGhOel2x3C39eXMtpPSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

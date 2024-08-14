@@ -1,3 +1,10 @@
 <resources>
     <string name="saludo">Hola Mundo</string>
+    <string name="app_name">2024ASWGR2LuisDLC</string>
+    <string-array name="string_array_opciones">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
 </resources>
