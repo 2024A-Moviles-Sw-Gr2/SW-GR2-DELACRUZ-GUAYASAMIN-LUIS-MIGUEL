@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="title_activity_selecion_mapa">SelecionMapa</string>
+    <string name="title_activity_vista_mapa">Vista_Mapa</string>
+</resources>
