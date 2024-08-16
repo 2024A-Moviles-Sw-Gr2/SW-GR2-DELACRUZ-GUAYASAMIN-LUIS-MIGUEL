@@ -1,4 +1,4 @@
-package com.example.proyecto.Adapter
+package com.example.proyecto.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyecto.Modelo.Costo
+import com.example.proyecto.modelo.Costo
 import com.example.proyecto.R
 
 class CostoAdapter(private val costos: List<Costo>, private val onEditClick: (Costo) -> Unit, private val onDeleteClick: (Costo) -> Unit) :

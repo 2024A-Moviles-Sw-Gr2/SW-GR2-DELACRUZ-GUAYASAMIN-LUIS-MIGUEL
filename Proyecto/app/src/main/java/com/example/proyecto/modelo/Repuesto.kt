@@ -1,4 +1,4 @@
-package com.example.proyecto.Modelo
+package com.example.proyecto.modelo
 
 data class Repuesto(
     val descripcion: String,

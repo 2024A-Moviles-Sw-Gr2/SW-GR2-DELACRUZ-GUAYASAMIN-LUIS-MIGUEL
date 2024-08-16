@@ -1,4 +1,4 @@
-package com.example.proyecto.Adapter
+package com.example.proyecto.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyecto.Modelo.Cita
+import com.example.proyecto.modelo.Cita
 import com.example.proyecto.R
 
 class CitaAdapter(private val citas: List<Cita>, private val onEditClick: (Cita) -> Unit, private val onDeleteClick: (Cita) -> Unit) :

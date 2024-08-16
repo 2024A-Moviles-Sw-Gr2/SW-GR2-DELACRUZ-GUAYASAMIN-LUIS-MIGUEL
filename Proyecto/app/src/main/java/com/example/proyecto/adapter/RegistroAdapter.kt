@@ -1,4 +1,4 @@
-package com.example.proyecto.Adapter
+package com.example.proyecto.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyecto.Modelo.Registro
+import com.example.proyecto.modelo.Registro
 import com.example.proyecto.R
 
 class RegistroAdapter(private val registros: List<Registro>, private val onPrintClick: (Registro) -> Unit, private val onEditClick: (Registro) -> Unit, private val onDeleteClick: (Registro) -> Unit) :

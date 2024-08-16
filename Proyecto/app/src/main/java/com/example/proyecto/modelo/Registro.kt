@@ -1,4 +1,4 @@
-package com.example.proyecto.Modelo
+package com.example.proyecto.modelo
 
 data class Registro(
     val fecha: String,

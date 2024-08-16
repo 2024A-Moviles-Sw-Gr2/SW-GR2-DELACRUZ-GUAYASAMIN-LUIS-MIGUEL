@@ -1,4 +1,4 @@
-package com.example.proyecto.Modelo
+package com.example.proyecto.modelo
 class Cliente(
     val nombre: String,
     val ruc: String,
