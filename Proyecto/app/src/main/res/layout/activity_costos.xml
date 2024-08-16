@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contenedor del Título y el Icono de Cerrar Sesión -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00236C"
+        android:padding="16dp">
+
+        <!-- Título Auto History -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Auto History"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- Icono de Cerrar Sesión -->
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            />
+    </LinearLayout>
+
+    <!-- Subtítulo Costos -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Formulario para agregar costos -->
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba la descripción"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba el monto"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Seleccione una fecha"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_calendar"
+             />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba la categoría"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para agregar costo -->
+    <Button
+        android:id="@+id/btnAddCosto"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#00ff00"
+        android:drawableTop="@drawable/ic_add"
+        android:text="" />
+
+    <!-- RecyclerView para listar costos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCostos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
