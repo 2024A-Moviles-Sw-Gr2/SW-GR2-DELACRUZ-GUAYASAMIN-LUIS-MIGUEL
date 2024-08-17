@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etNombreCliente" type="id" />
+    <item name="tvNombreCliente" type="id" />
+    <item name="tvNombreCita" type="id" />
+    <item name="etNombreCita" type="id" />
+    <item name="btnCrearCita" type="id" />
+</resources>

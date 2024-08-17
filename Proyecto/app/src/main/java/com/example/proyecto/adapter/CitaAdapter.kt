@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.modelo.Cita
 import com.example.proyecto.R
 
-class CitaAdapter(private val citas: List<Cita>, private val onEditClick: (Cita) -> Unit, private val onDeleteClick: (Cita) -> Unit) :
+class CitaAdapter(
+    private val citas: List<Cita>,
+    private val onEditClick: (Cita) -> Unit,
+    private val onDeleteClick: (Cita) -> Unit) :
     RecyclerView.Adapter<CitaAdapter.CitaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CitaViewHolder {
