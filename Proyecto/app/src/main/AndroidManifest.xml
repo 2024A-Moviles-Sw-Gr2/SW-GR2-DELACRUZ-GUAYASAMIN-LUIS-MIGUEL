@@ -13,34 +13,34 @@
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
+            android:name=".DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Configuracion"
+            android:name=".ConfiguracionActivity"
             android:exported="false" />
         <activity
-            android:name=".CRUD_registro"
+            android:name=".CRUD_registroActivity"
             android:exported="false" />
         <activity
-            android:name=".Registros"
+            android:name=".RegistrosActivity"
             android:exported="false" />
         <activity
-            android:name=".CRUD_cita"
+            android:name=".CRUD_citaActivity"
             android:exported="false" />
         <activity
-            android:name=".Calendario"
+            android:name=".CalendarioActiviy"
             android:exported="false" />
         <activity
-            android:name=".Costos"
+            android:name=".CostosActiviy"
             android:exported="false" />
         <activity
-            android:name=".Repuestos"
+            android:name=".RepuestosActivity"
             android:exported="false" />
         <activity
-            android:name=".Clientes"
+            android:name=".ClientesActivity"
             android:exported="false" />
         <activity
-            android:name=".CRUD_Cliente"
+            android:name=".CRUD_ClienteActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

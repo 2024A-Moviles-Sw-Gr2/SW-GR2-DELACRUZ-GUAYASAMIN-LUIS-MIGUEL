@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         val usuario = findViewById<EditText>(R.id.etUsername)
         val contrasena = findViewById<EditText>(R.id.etPassword)
         botonLogin.setOnClickListener {
-            if((usuario.text.toString() == "vinicio") && (contrasena.text.toString() == "admin")){
-                val intent = Intent(this, Dashboard::class.java)
+            //if((usuario.text.toString() == "vinicio") && (contrasena.text.toString() == "admin")) {
+                val intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
-            }
+            //}
         }
     }
 }

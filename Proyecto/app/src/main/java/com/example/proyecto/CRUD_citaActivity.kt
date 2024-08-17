@@ -3,22 +3,15 @@ package com.example.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 
-class Configuracion : AppCompatActivity() {
+class CRUD_citaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_configuracion)
+        setContentView(R.layout.activity_crud_cita)
 
         val ivLogout = findViewById<ImageView>(R.id.ivLogout)
-        val botonLogout = findViewById<Button>(R.id.btnCerrarSesion)
-
-        ivLogout.setOnClickListener{
-            irActividad(MainActivity::class.java)
-        }
-
-        botonLogout.setOnClickListener {
+        ivLogout.setOnClickListener {
             irActividad(MainActivity::class.java)
         }
     }

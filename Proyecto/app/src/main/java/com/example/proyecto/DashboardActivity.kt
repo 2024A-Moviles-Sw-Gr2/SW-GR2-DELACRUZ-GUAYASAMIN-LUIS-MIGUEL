@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class Dashboard : AppCompatActivity() {
+class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -19,27 +19,27 @@ class Dashboard : AppCompatActivity() {
         val botonCitas = findViewById<Button>(R.id.btnCitas)
 
         configuracion.setOnClickListener{
-            irActividad(Configuracion::class.java)
+            irActividad(ConfiguracionActivity::class.java)
         }
 
         botonCliente.setOnClickListener {
-            irActividad(Clientes::class.java)
+            irActividad(ClientesActivity::class.java)
         }
 
         botonCostos.setOnClickListener {
-            irActividad(Costos::class.java)
+            irActividad(CostosActiviy::class.java)
         }
 
         botonRegistros.setOnClickListener {
-            irActividad(Registros::class.java)
+            irActividad(RegistrosActivity::class.java)
         }
 
         botonRepuestos.setOnClickListener {
-            irActividad(Repuestos::class.java)
+            irActividad(RepuestosActivity::class.java)
         }
 
         botonCitas.setOnClickListener {
-            irActividad(Calendario::class.java)
+            irActividad(CalendarioActiviy::class.java)
         }
 
     }

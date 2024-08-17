@@ -5,14 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class CRUD_Cliente : AppCompatActivity() {
+class RepuestosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crud_cliente)
+        setContentView(R.layout.activity_repuestos)
 
         val ivLogout = findViewById<ImageView>(R.id.ivLogout)
-
-        ivLogout.setOnClickListener{
+        ivLogout.setOnClickListener {
             irActividad(MainActivity::class.java)
         }
     }

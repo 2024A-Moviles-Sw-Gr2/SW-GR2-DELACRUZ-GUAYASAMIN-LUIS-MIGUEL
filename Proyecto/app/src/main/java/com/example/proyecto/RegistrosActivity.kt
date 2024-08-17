@@ -3,17 +3,24 @@ package com.example.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 
-class Costos : AppCompatActivity() {
+class RegistrosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_costos)
+        setContentView(R.layout.activity_registros)
 
         val ivLogout = findViewById<ImageView>(R.id.ivLogout)
+        val botonRegistro = findViewById<Button>(R.id.btnAddRegistro)
         ivLogout.setOnClickListener {
             irActividad(MainActivity::class.java)
         }
+
+        botonRegistro.setOnClickListener {
+            irActividad(CRUD_registroActivity::class.java)
+        }
+
     }
 
     fun irActividad(clase: Class<*>){

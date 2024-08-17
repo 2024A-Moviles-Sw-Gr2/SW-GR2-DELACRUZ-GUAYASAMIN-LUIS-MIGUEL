@@ -6,21 +6,20 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class Clientes : AppCompatActivity() {
+class CalendarioActiviy : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clientes)
+        setContentView(R.layout.activity_calendario)
 
         val ivLogout = findViewById<ImageView>(R.id.ivLogout)
-        val botonAddClient = findViewById<Button>(R.id.btnAddClient)
-        ivLogout.setOnClickListener{
+        val botonCita = findViewById<Button>(R.id.btnAddCita)
+        ivLogout.setOnClickListener {
             irActividad(MainActivity::class.java)
         }
 
-        botonAddClient.setOnClickListener {
-            irActividad(CRUD_Cliente::class.java)
+        botonCita.setOnClickListener {
+            irActividad(CRUD_citaActivity::class.java)
         }
-
     }
 
     fun irActividad(clase: Class<*>){

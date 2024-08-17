@@ -1,23 +1,24 @@
 package com.example.proyecto.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyecto.CRUD_ClienteActivity
+import com.example.proyecto.ClientesActivity
 import com.example.proyecto.R
+import com.example.proyecto.modelo.Cliente
 
-// Modelo Cliente
-data class Cliente(
-    val nombre: String,
-    val ci: String,
-    val telefono: String
-)
-
-// Adaptador para RecyclerView
-class ClienteAdapter(private val clientes: List<Cliente>, private val onEditClick: (Cliente) -> Unit, private val onDeleteClick: (Cliente) -> Unit) :
-    RecyclerView.Adapter<ClienteAdapter.ClienteViewHolder>() {
+class ClienteAdapter(
+    private val context: Context,
+    private val clientes: MutableList<Cliente>,
+    private val onEditClick: (Cliente) -> Unit,
+    private val onDeleteClick: (Cliente) -> Unit
+) : RecyclerView.Adapter<ClienteAdapter.ClienteViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ClienteViewHolder {
         val itemView = LayoutInflater.from(parent.context)
@@ -41,17 +42,26 @@ class ClienteAdapter(private val clientes: List<Cliente>, private val onEditClic
 
         fun bind(cliente: Cliente) {
             nombre.text = cliente.nombre
-            ci.text = "CI: ${cliente.ci}"
+            ci.text = "CI: ${cliente.ruc}"
             telefono.text = "Tlf: ${cliente.telefono}"
 
-            // Manejar clics en los botones Editar y Eliminar
             btnEdit.setOnClickListener {
-                onEditClick(cliente)
+                val resultIntent = Intent(context, CRUD_ClienteActivity::class.java)
+                resultIntent.putExtra("cliente", cliente)
+                (context as ClientesActivity).verClientesLauncher.launch(resultIntent)
             }
 
             btnDelete.setOnClickListener {
                 onDeleteClick(cliente)
             }
+        }
+    }
+
+    fun updateCliente(cliente: Cliente) {
+        val position = clientes.indexOfFirst { it.ruc == cliente.ruc } // Use a unique identifier
+        if (position != -1) {
+            clientes[position] = cliente
+            notifyItemChanged(position)
         }
     }
 }
