@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.modelo.Costo
 import com.example.proyecto.R
 
-class CostoAdapter(private val costos: List<Costo>, private val onEditClick: (Costo) -> Unit, private val onDeleteClick: (Costo) -> Unit) :
+class CostoAdapter(
+    private val costos: List<Costo>,
+    private val onEditClick: (Costo) -> Unit,
+    private val onDeleteClick: (Costo) -> Unit) :
     RecyclerView.Adapter<CostoAdapter.CostoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CostoViewHolder {
