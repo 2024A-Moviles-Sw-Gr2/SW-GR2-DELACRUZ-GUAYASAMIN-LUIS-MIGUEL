@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.modelo.Repuesto
 import com.example.proyecto.R
 
-class RepuestoAdapter(private val repuestos: List<Repuesto>) :
-    RecyclerView.Adapter<RepuestoAdapter.RepuestoViewHolder>() {
+class RepuestoAdapter(
+    private val repuestos: List<Repuesto>,
+    private val onEditClick: (Repuesto) -> Unit,
+    private val onDeleteClick: (Repuesto) -> Unit
+): RecyclerView.Adapter<RepuestoAdapter.RepuestoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RepuestoViewHolder {
         val itemView = LayoutInflater.from(parent.context)
@@ -39,13 +42,12 @@ class RepuestoAdapter(private val repuestos: List<Repuesto>) :
             porcentaje.text = "${repuesto.porcentaje}%"
             precio.text = "$${repuesto.precio}"
 
-            // Aquí puedes manejar los clics en los botones Editar y Eliminar
             btnEdit.setOnClickListener {
-                // Código para editar repuesto
+                onEditClick(repuesto)
             }
 
             btnDelete.setOnClickListener {
-                // Código para eliminar repuesto
+                onDeleteClick(repuesto)
             }
         }
     }
