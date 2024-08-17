@@ -9,8 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.modelo.Registro
 import com.example.proyecto.R
 
-class RegistroAdapter(private val registros: List<Registro>, private val onPrintClick: (Registro) -> Unit, private val onEditClick: (Registro) -> Unit, private val onDeleteClick: (Registro) -> Unit) :
-    RecyclerView.Adapter<RegistroAdapter.RegistroViewHolder>() {
+class RegistroAdapter(
+    private val registros: List<Registro>,
+    private val onPrintClick: (Registro) -> Unit,
+    private val onEditClick: (Registro) -> Unit,
+    private val onDeleteClick: (Registro) -> Unit
+) : RecyclerView.Adapter<RegistroAdapter.RegistroViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RegistroViewHolder {
         val itemView = LayoutInflater.from(parent.context)
